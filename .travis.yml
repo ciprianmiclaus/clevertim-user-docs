@@ -1,0 +1,8 @@
+language: python
+python:
+  - "2.7"
+install:
+  - pip install Sphinx==1.6.1
+script:
+  - cd source; make html
+
