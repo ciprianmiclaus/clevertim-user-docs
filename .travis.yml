@@ -4,5 +4,5 @@ python:
 install:
   - pip install Sphinx==1.6.1
 script:
-  - cd source; make html
+  - make html
 
