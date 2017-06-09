@@ -153,4 +153,6 @@ texinfo_documents = [
 ]
 
 
+html_show_sourcelink = False
 
+html_show_sphinx = False
