@@ -1,6 +1,98 @@
 Frequently asked questions (FAQ)
 ================================
 
+Configuration
+-------------
+
+.. rubric:: Can I hide certain tabs that I don't want to see?
+
+Yes.
+
+In the `Settings/Business preferences <https://www.clevertim.com/welcome/#bus-prefs>`_, scroll down to the Tabs Configuration section.
+There you can choose which tabs are shown and which are not. You can also rename some tabs to something more appropriate.
+For example, you could choose to hide the Companies tab if you only work with contacts/people. You could choose to rename Contacts to Patients, if that's more appropriate for your business.
+
+Don't forget to Save the changes by clicking on the 'Save changes' button at the bottom of the page.
+
+
+.. rubric:: Can I disallow my users from adding any private contacts, companies, cases or opportunities?
+
+Yes.
+
+In the `Settings/Business preferences <https://www.clevertim.com/welcome/#bus-prefs>`_, scroll down to the Business Settings section.
+Make sure you deselect the **Allow users to add private contacts, companies, cases and opportunities (not visible to other regular users but admin users can still see them)** option.
+
+Save your changes. Now your users will not get an option to save private items that others cannot see.
+
+(Note: Administrators can always see private items and re-set the visibility to be public - visible to everyone).
+
+
+.. rubric:: I want my users to be only able to create contacts (or companies, cases or opportunities) only visible to themselves (i.e. private). I want to disallow the option to create items visible to everyone. Is that possible?
+
+Yes.
+
+In the `Settings/Business preferences <https://www.clevertim.com/welcome/#bus-prefs>`_, scroll down to the Business Settings section.
+Make sure you select/tick the **Users can add only private contacts, companies, cases and opportunities (not visible to other regular users but admin users can still see them)** option.
+Also, make sure you deselect/untick the **Allow users to add contacts, companies, cases and opportunities visible to Everyone (admin users can always do it, irrespective of this setting)** option.
+
+Save your changes.
+
+.. rubric:: I don't want my users to be able to create items visible to everyone, only to people within their own groups. Is that possible?
+
+Yes. This assumes that you have defined groups of users and placed your users into those groups.
+
+In the `Settings/Business preferences <https://www.clevertim.com/welcome/#bus-prefs>`_, scroll down to the Business Settings section.
+Make sure you deselect/untick the **Allow users to add contacts, companies, cases and opportunities visible to Everyone (admin users can always do it, irrespective of this setting)** option.
+
+This will stop your users from being able to create items visible to everyone. They can still create items visible to other users in their group(s) and, if you have not disable that option, they can still raise private items (visible only to them and to any administrators).
+
+
+Data Entry
+----------
+
+.. rubric:: Someone made some changes to the data. Can I find out who and what the changes were?
+
+Yes. The "What's New" tab will show you a log of all the changes made and who made them.
+You can filter that section by a few criteria available in the "Filter your new activity by" to find what you're looking for.
+
+.. rubric:: Someone inadvertently deleted a contact. Is it possible to recover the contact, its notes and data?
+
+Yes. In the "What's New" tab you will need to find the log entry that shows the delete operation.
+Next to it, there should be an (undo) link. Click the undo link in order to recover the contact and its associated data (including notes).
+
+.. rubric:: Can I edit multiple items at the time?
+
+Yes. We'll use the contacts as an example below, but this applies to companies, cases and opportunities too.
+
+In the Contacts tab, select the items you want to update. You can filter the list to narrow down the list of contacts to the ones you want to update.
+
+Once you select multiple contacts, a dropdown control will appear that allows you to select an operation to apply to all the selected contacts.
+
+The **Bulk data updates** operations allow you to set or remove a value for a field. When you select this operation, you will be given an option to select the field you want to update. For example, you could select the Country, in order to update the Country field in bulk for multiple contacts.
+Specify the value for the field (e.g. Country) and then click Apply.
+
+The **Bulk tagging** allows you to add/remove tags to multiple contacts at a time.
+
+Other bulk operations available in this section allow you to merge contacts, email or SMS multiple contacts, change visibility for contacts, archive, delete or place contacts into Favourites, Need Love or marking them as needing a follow up.
+
+.. rubric:: Can I merge duplicate contacts?
+
+Sometimes, in a CRM system, you end up with duplicate entries for the same contact or for the same company. In the description below, we assume we're merging contacts, but the same approach applies to merging companies, cases and opportunities.
+
+Merging contacts is achieved in a few steps:
+	* Select the contacts you want to merge (the duplicates)
+	* Add them to the merge section
+	* Perform the merge
+
+To select a contact, go to the Contacts tab and select a contact by clicking the checkbox that appears on the left. In the 'Select operation' dropdown, select the 'Add to merge section' operation and click Apply.
+
+The merge section will appear on the right as soon as you select your first contact to merge and add it to the merge section. It will show you at all times the selected contacts for the merge operation. It has two buttons: Discard, which will discard the merge operation and clear the merge section without performing any merging, and Merge, which will perform the actual merge operation.
+
+Once merged, the old contacts will be deleted, and they will appear in the "What's new section" as deleted and a new contact is created which will contain the merged fields/notes/data of the merge contacts. If you are not happy with the merge, you can always undo the deletes and recover your old contacts.
+
+Note: When the merge contacts contain conflicting values for fields that cannot contain multiple values, then the value from the first contact is used. As such, choosing which contact is your first contact in the merge section is significant to the end result. Fields that can contain multiple values (e.g. emails, websites, notes) are not affected, as all the values are added to the new contact.
+
+
 Notes
 -----
 
