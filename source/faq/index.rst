@@ -4,6 +4,16 @@ Frequently asked questions (FAQ)
 Configuration
 -------------
 
+.. rubric:: Can your website be white labeled?
+
+Not at present.
+
+.. rubric:: Can I change the logo and the colors?
+
+The logo displayed in the upper left corner can be changed from the `Settings/Business preferences <https://www.clevertim.com/welcome/#bus-prefs>`_ section. You can upload your own logo to make your Clevertim CRM account more personalized to your business.
+
+We don't currently support changes to the theme or the colors.
+
 .. rubric:: Can I hide certain tabs that I don't want to see?
 
 Yes.
@@ -91,6 +101,15 @@ The merge section will appear on the right as soon as you select your first cont
 Once merged, the old contacts will be deleted, and they will appear in the "What's new section" as deleted and a new contact is created which will contain the merged fields/notes/data of the merge contacts. If you are not happy with the merge, you can always undo the deletes and recover your old contacts.
 
 Note: When the merge contacts contain conflicting values for fields that cannot contain multiple values, then the value from the first contact is used. As such, choosing which contact is your first contact in the merge section is significant to the end result. Fields that can contain multiple values (e.g. emails, websites, notes) are not affected, as all the values are added to the new contact.
+
+.. rubric:: I have some old contacts that I don't need. What are the options?
+
+You can delete the contacts. Deleted contacts are maintained in the system for approximately two weeks, for you to be able to undo the delete operation, if they were deleted by mistake. After that time, they are cleared from the system and you will not be able to recover them.
+
+Another option is to archive the contacts. Archived contacts will not appear in the main list, but are still retained in the system. To un-archive your contacts, please contact our support.
+Archived contacts are also viewable in the reports (when you choose the option to include archived contacts in your report).
+
+One other difference between deleting and archiving is that archived contacts are still contributing to your overall number of contacts allowed by your plan. Deleted contacts do not.
 
 
 Notes
