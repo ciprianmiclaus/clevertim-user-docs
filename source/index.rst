@@ -8,5 +8,6 @@ Contents:
    
    introduction/index
    getting_started/index
+   custom_fields/index
    import/index
    faq/index
