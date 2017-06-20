@@ -44,6 +44,162 @@ Types of custom fields
 
 Custom fields have a type which determines how the field will appear when displayed to the users and what kind of data it can contain.
 
+Input fields
+++++++++++++
+
+* Appearance
+	- Input fields are displayed as free text input boxes
+* Data & Validation
+	- Users can type any alphanumeric or special characters
+	- There is no validation on the data entered
+* Pros:
+	- Input fields are very versatile and can support any type of data
+* Cons:
+	- Lack of validation means the values might not be consistent
+	- Users might enter the same values with different spelling, capitalization or spacing
+
+
+Select fields
++++++++++++++
+
+* Appearance
+	- Select fields are displayed as drop-down control
+* Data & Validation
+	- Users have to select a value from a list of pre-defined values
+	- You define the allowed values when you create the custom field
+* Pros:
+	- Manual data entry are minimized as users select the data, rather than type it
+* Cons:
+	- If new values need to be added, the custom field needs to be edited, which only an administrator has permissions to do
+
+
+Date fields
++++++++++++
+
+* Appearance
+	- Displays a date and it has a calendar control for users to easily pick a date
+* Data & Validation
+	- Can only contain a calendar date
+* Pros:
+	- The calendar date picker offer a user friendly way for users to choose dates
+	- Has special support for date lookups in filters and reports (e.g. after date, before date, in the last X days/weeks, etc.)
+* Cons:
+	- None
+
+
+Country fields
+++++++++++++++
+
+* Appearance
+	- Displays a list of countries for users to select from
+* Data & Validation
+	- Can only contain a country from a pre-defined list of countries
+* Pros:
+	- The list of countries is maintained by the system, you do not need to maintain it
+* Cons:
+	- None
+
+
+Region fields
++++++++++++++++
+
+* Appearance
+	- Displays a list of regions by country for users to select from
+* Data & Validation
+	- Can only contain a region/country from a pre-defined list of countries
+* Pros:
+	- The list of regions by countries is maintained by the system, you do not need to maintain it or type it in
+* Cons:
+	- It contains regions for all countries, so it might be a bit more difficult to find the right value (it allows users to search though)
+
+
+US State fields
++++++++++++++++
+
+* Appearance
+	- Displays a list of US states for users to select from
+* Data & Validation
+	- Can only contain a US state from a pre-defined list
+* Pros:
+	- The list of US states is available in the system, you do not need to type it in
+* Cons:
+	- None
+
+
+Currency fields
++++++++++++++++
+
+* Appearance
+	- Displays a list of world currencies for users to select from (e.g. US Dollar, Euro, British pound)
+* Data & Validation
+	- Can only contain a currency from a pre-defined list
+* Pros:
+	- The list of currencies is available in the system, you do not need to type it in
+* Cons:
+	- None
+
+
+User fields
++++++++++++
+
+* Appearance
+	- Displays a list of your own users in Clevertim to select from
+* Data & Validation
+	- All your users onboarded onto Clevertim will be available to select from
+* Pros:
+	- Supports any use case that requires one or multiple of your users to be associated with a contact, company, opportunity, case (e.g. Account Manager, Service Rep, Assigned user)
+* Cons:
+	- Any of your employees/colleagues not onboarded into Clevertim will not be available for selection
+
+
+Contact fields
+++++++++++++++
+
+* Appearance
+	- Displays a list of your own contacts in Clevertim to select from
+* Data & Validation
+	- All your contacts entered into Clevertim will be available to select from
+* Pros:
+	- Supports any use case that requires one or multiple of your contacts to be associated with another contact or a company, an opportunity or a case (e.g. Manager, Spouse, Related, etc.)
+* Cons:
+	- None
+
+Company fields
+++++++++++++++
+
+* Appearance
+	- Displays a list of your own companies in Clevertim to select from
+* Data & Validation
+	- All your companies entered into Clevertim will be available to select from
+* Pros:
+	- Supports any use case that requires one or multiple of your companies to be associated with a contact or another company, an opportunity or a case (e.g. Additional Company, Parent Group, Holding Company, Branch, etc.)
+* Cons:
+	- None
+
+Opportunity fields
+++++++++++++++++++
+
+* Appearance
+	- Displays a list of your own opportunities in Clevertim to select from
+* Data & Validation
+	- All your opportunities entered into Clevertim will be available to select from
+* Pros:
+	- Supports any use case that requires one or multiple of your opportunities to be associated with a contact, a company, another opportunity or a case (e.g. Previous tender, Previous inquiry, etc.)
+* Cons:
+	- None
+
+Case fields
++++++++++++
+
+* Appearance
+	- Displays a list of your own cases in Clevertim to select from
+* Data & Validation
+	- All your cases entered into Clevertim will be available to select from
+* Pros:
+	- Supports any use case that requires one or multiple of your cases to be associated with a contact, a company, a opportunity or another case (e.g. Previous inquiry, Previous problem, Related issue, etc.)
+* Cons:
+	- None
+
 
 Editing an existing custom field
 --------------------------------
@@ -54,7 +210,7 @@ Once saved, the new definition of the field will be visible to your other users 
 
 .. warning::
 
-When changing the type of a custom field, some values for the custom field might become invalid. For example, if you have a custom field of type Country and you change the type to US State, some values for the previous definition of the custom field will be invalid and might not be displayed correctly under the contacts, companies, cases or opportunities that have the custom field set to those values. Think carefully about the data before making changes to the type of the custom field.
+	When changing the type of a custom field, some values for the custom field might become invalid. For example, if you have a custom field of type Country and you change the type to US State, some values for the previous definition of the custom field will be invalid and might not be displayed correctly under the contacts, companies, cases or opportunities that have the custom field set to those values. Think carefully about the data before making changes to the type of the custom field.
 
 
 Deleting a custom field
@@ -64,7 +220,7 @@ To delete an existing custom field, go to the `Settings/Custom fields <https://w
 
 .. warning::
 
-All the data entered in this field for all the contacts, companies, opportunities or cases where the custom field is display **will be lost**.
+	All the data entered in this field for all the contacts, companies, opportunities or cases where the custom field is display **will be lost**.
 
 Data entry
 ----------
