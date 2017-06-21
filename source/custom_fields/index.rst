@@ -204,7 +204,40 @@ Case fields
 Editing an existing custom field
 --------------------------------
 
-To edit an existing custom field, go to the `Settings/Custom fields <https://www.clevertim.com/welcome/#custom-fields>`_ section, make the changes you need to the custom fields you want changed and press the Save button on the right which corresponds to the custom field you are changing (i.e. the Save button located on the same row).
+To edit an existing custom field, go to the `Settings/Custom fields <https://www.clevertim.com/welcome/#custom-fields>`_ section, make the changes you need to the custom fields you want changed.
+
+To change the name of the custom field, just click on the name of the custom field. See illustration below:
+
+.. image:: /_static/custom_fields_name_edit.png
+
+Once clicked, the name of the field becomes editable and you can change it. When you're happy with the changes, just press the button with the tick.
+
+.. image:: /_static/custom_fields_name_edit2.png
+
+If you want to discard your changes to the name field, just press the button with the X.
+
+.. image:: /_static/custom_fields_name_edit3.png
+
+
+To change which items the fields are shown under, click the Edit link in the "Where is it shown?" column, like in the illustration below:
+
+.. image:: /_static/custom_fields_appearance_edit.png
+
+Once clicked, you will see a dropdown that will allow you to select what items this field should be shown under. You can select to show the custom fields under multiple type of items.
+
+.. image:: /_static/custom_fields_appearance_edit2.png
+
+For Select type of custom fields, you will need to select the values that are allowed into the field. Click on the Edit link under the Appearance column.
+
+.. image:: /_static/custom_fields_appearance_edit3.png
+
+Once clicked, you can select the values that are allowed in the Select field. Enter one value per line and then click Ok to accept the values or Cancel to discard the changes you have made:
+
+.. image:: /_static/custom_fields_appearance_edit4.png
+
+Once you are happy with your changes made to the custom fields, make sure you press the Save button on the right which corresponds to the custom field you are changing (i.e. the Save button located on the same row). See screenshot below for illustration purposes:
+
+.. image:: /_static/custom_fields_edit_save.png
 
 Once saved, the new definition of the field will be visible to your other users in the system. You might have to refresh your browser to pick up the updated custom field if it is not picked up automatically.
 
@@ -212,11 +245,22 @@ Once saved, the new definition of the field will be visible to your other users 
 
 	When changing the type of a custom field, some values for the custom field might become invalid. For example, if you have a custom field of type Country and you change the type to US State, some values for the previous definition of the custom field will be invalid and might not be displayed correctly under the contacts, companies, cases or opportunities that have the custom field set to those values. Think carefully about the data before making changes to the type of the custom field.
 
+If you decide you don't need the changes you have just made, you can revert to the last saved version of the custom field by pressing the Reset field. You will lose any unsaved changes.
+See the screenshot below for the location of the Reset button.
+
+.. image:: /_static/custom_fields_edit_reset.png
+	
+	
 
 Deleting a custom field
 -----------------------
 
-To delete an existing custom field, go to the `Settings/Custom fields <https://www.clevertim.com/welcome/#custom-fields>`_ section and press the Delete button on the same row with the custom field that you do not need anymore. Once deleted, the custom field will no longer be displayed in the system.
+To delete an existing custom field, go to the `Settings/Custom fields <https://www.clevertim.com/welcome/#custom-fields>`_ section and press the Delete button on the same row with the custom field that you do not need anymore. See a screenshot below for illustration purposes.
+
+.. image:: /_static/custom_fields_edit_delete.png
+
+
+Once deleted, the custom field will no longer be displayed in the system.
 
 .. warning::
 
