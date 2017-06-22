@@ -269,23 +269,109 @@ Once deleted, the custom field will no longer be displayed in the system.
 Data entry
 ----------
 
+Custom fields appear on the right side for contacts, companies, opportunities and cases. Only the custom fields applicable to the given items will be displayed (e.g. custom fields for cases will only be shown for cases, not contacts, and so on).
+
+To add a value for a custom field, just click on the value or the placeholder for the value (i.e. which says 'Add a value' or 'Add another value'). Make the changes required and click the tick button or press Enter on your keyboard to save the changes. If you want to cancel the chances and keep the previous value, if any, just click the X button or press Escape.
+Multiple value custom fields will allow you to enter multiple values.
+
+.. image:: /_static/custom_fields_input_edit.png
+
+Depending on the type of the field, the editing will be displayed differently. For example, a Date custom field will show a calendar control allowing you to pick the date in a more intuitive fashion. See the screenshot below:
+
+.. image:: /_static/custom_fields_calendar_edit.png
+
+
 Data entry in bulk
 ------------------
+
+Custom fields values can be added or removed for multiple contacts, companies, opportunities or cases at a time, in bulk. First step is to select the contacts, companies, opportunities or cases that you want the custom field values added or removed. The example below shows how to select multiple contacts in the Contacts tab, but the same operation can be done for companies, opportunities or cases in their respective tabs.
+
+You can apply a filter to narrow down the list of contacts. Then use the checkbox on the left side to select the contacts you want to make changes to.
+Notice how in the example below, the contacts are filtered to only show those who have a gmail.com email address list, and then the first one in the list is selected (i.e. the checkbox is ticked).
+
+.. image:: /_static/contacts_list_select_contact.png
+
+In the example above, you can see the "Select operation" dropdown control. This allows you to select an operation to apply to all the selected contacts at once.
+
+In the section **Bulk data updates**, select the 'Add/set field value' option.
+
+.. image:: /_static/bulk_add_set_field_value.png
+
+When you select this option, another dropdown control appears, allowing you to select which data field you want to update. In this second dropdown controls, shown in the illustration below, scroll down to the **Custom fields** section and pick the field you want to make changes to. In the example below, we're going to pick the 'Products purchased' custom field.
+
+.. image:: /_static/bulk_add_set_field_value2.png
+
+Once you select the data field you want to update, a final option appears allowing you to enter the actual value for the custom field. In the example below, we want to add a new product purchased and the product is 'Cat food'. In this example, the value is presented as an free text input box, because that's the type of this custom field. For date custom fields, a calendar control allows you to pick the date without having to type it, and so on. Depending on the type of the custom field, the way you enter or select or pick the values will differ.
+
+.. image:: /_static/bulk_add_set_field_value3.png
+
+And finally, click the Apply button to make the actual changes. Once the changes are saved successfully, a confirmation dialog shows you how many contacts were updated successfully in bulk.
+
+.. image:: /_static/bulk_add_set_field_value4.png
+
+Now, if you navigate to any of the updated contacts, you should see the newly added value for the chosen custom fields. In our example, we'll look at the first contact in the list whom we've updated, and notice that the Products purchased custom field is now updated with the new value we've just added.
+
+.. image:: /_static/bulk_add_set_field_value5.png
+
+To remove an existing value, follow the same steps as the ones above, but select the 'Remove field value(s)' from the 'Select operation' dropdown control box, as shown in the illustration below.
+
+.. image:: /_static/bulk_remove_field_value.png
 
 
 Importing custom fields data
 ----------------------------
 
+When you import data from CSV, your custom fields will be imported from columns that match the name of the custom field **exactly**. Be extra careful with additional spaces, different capitalization, punctuation when you name the columns in your CSV file.
+
+For example, to import data from CSV into a date field called Birthday, just make sure you have a column in your CSV file called Birthday. Enter dates for that column. One best format for dates is the YYYY-MM-DD format, which is un-ambiguous and readable. Other date types are supported too, but try to stay away from the MM/DD/YYYY format which depending on the localization/country might be interpreted as DD/MM/YYYY instead.
+
+For custom fields that allow multiple values, just add multiple columns with the same name. For example, you can add multiple columns Products purchased and all the values from those columns will be imported into the custom field Products purchased, which allows multiple values.
+
+
 Exporting custom fields data
 ----------------------------
+
+When you export your data to CSV files, the custom fields will be exported as columns in the CSV file, with the same name as the one they appear in the system.
 
 
 Custom fields in filters
 ------------------------
 
+As soon as you add your first custom fields, you will notice that the 'Filters by' section at the top of your contacts, companies, opportunities or cases tabs will display an additional section titled 'Custom fields'. This allows you to add a filter that uses that custom field to only show those items that match a certain criterion.
+
+.. image:: /_static/custom_fields_in_filters.png
+
+To filter by a certain custom field, just click on the custom field, which should appear as a clickable link in the Filters section.
+Enter the value that you want to filter by and click Ok. In the example below, we want to see all the contacts who have 'Cat food' as a value in the Products purchased custom field (i.e. contacts who have purchased cat food).
+
+.. image:: /_static/custom_fields_in_filters2.png
+
+As soon as you click Ok, the filter is being applied and the list view will only show those items that meet the criterion set. In our case, we see only those contacts who have purchased cat food. The current filter appears in the Filter your contacts by section, as sometimes is easy to forget that we're not seeing all the contacts, but only those who meet the criterion (i.e. have purchased cat food in our example). Multiple such filters can be added to filter the list further.
+
+.. image:: /_static/custom_fields_in_filters3.png
+
+To clear an individual criterion from the filter, just press the 'bin' icon, as in the image below:
+
+.. image:: /_static/custom_fields_in_filters4.png
+
+If you have multiple criteria in your filter, you can clear them all in one go, by pressing the Reset button in your filters section.
+This will clear all the filters and show all your contacts, companies, opportunities or cases, depending on the tab that you're in.
+
+.. image:: /_static/custom_fields_in_filters5.png
+
+If you need to filter your contacts often by the same criteria, it's worth saving the filter. Press the Save filter button in your filters section (visible in the screenshot above). Give your filter a name in the dialog that appears after that. The same dialog box allows you to select if this filter will be available to everyone else who uses your account, or to a select group of co-workers or perhaps just to yourself.
+
+.. image:: /_static/custom_fields_in_filters6.png
+
+Once saved, the filter is available to be applied via one click from the Saved filters section on the right. Just click on it to apply it and filter your contacts, companies, opportunities or cases (whichever section the filter is applicable to).
+
+.. image:: /_static/custom_fields_in_filters7.png
+
+
 Custom fields in reports
 ------------------------
 
+The custom fields are available in reports as:
+	* search criteria (e.g. report to only show me contacts who purchased cat food)
+	* column in the report (show the actual custom field values in the report data)
 
-Application specific custom fields
-----------------------------------
