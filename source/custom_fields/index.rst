@@ -375,3 +375,12 @@ The custom fields are available in reports as:
 	* search criteria (e.g. report to only show me contacts who purchased cat food)
 	* column in the report (show the actual custom field values in the report data)
 
+To search for contacts that have a custom field populated with a certain value, just select the custom fields in the section that allows you to specify the criteria. The custom fields will appear in the custom fields section of the selection, as in the illustration below, where we're selecting the Products purchased custom field.
+
+.. image:: /_static/custom_fields_in_reports.png
+
+To show a custom field as a column in the resulting report, just select the custom field in the list of fields to display. This is available in the selection dropdown with a label 'Show only the following columns (in order)'. See illustration below with the Products purchased custom field added to the list of columns to display.
+
+.. image:: /_static/custom_fields_in_reports2.png
+
+To run the report, just click on the Run button, or if you want to download the result as a CSV file, click the Download button. You can also save the report if you plan on using it multiple times or if you plan on making it available to other users within your company. To save the report, click the Save As button and give it a name and a short description as to what the report is intended to show.
