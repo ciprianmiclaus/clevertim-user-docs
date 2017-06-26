@@ -9,5 +9,6 @@ Contents:
    introduction/index
    getting_started/index
    custom_fields/index
+   users_groups/index
    import/index
    faq/index

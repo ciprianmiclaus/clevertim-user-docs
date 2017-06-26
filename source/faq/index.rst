@@ -57,6 +57,13 @@ Make sure you deselect/untick the **Allow users to add contacts, companies, case
 This will stop your users from being able to create items visible to everyone. They can still create items visible to other users in their group(s) and, if you have not disable that option, they can still raise private items (visible only to them and to any administrators).
 
 
+.. rubric:: Can I hide some of the fields?
+
+Yes. In the `Settings/Business preferences <https://www.clevertim.com/welcome/#bus-prefs>`_, scroll down to the 'Hidden Fields' section. This will allow you to hide some fields that you don't need.
+
+Don't forget to save the changes.
+
+
 Data Entry
 ----------
 
