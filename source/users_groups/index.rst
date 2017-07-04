@@ -73,3 +73,76 @@ The following roles and entitlements can be selected for your users:
 The same section allows you to reset the password for certain users, if needed.
 
 
+Visibility options
+------------------
+
+One of the issues you have to think about when creating a Clevertim account is what data should be visible to whom. Do you want every one of your users to be able to see all the data? Do you want to restrict certain contacts or opportunities, cases etc. so that only certain users can see those data?
+
+This section covers the options available to you and since it concerns who can see the data, these are frequently referred to in our documentation as visibility options. There are a few options or models to choose from when choosing how to make your data visible to users.
+
+The first and the simplest model is to make the data available to everyone. There are no restrictions in place and everyone can see every single contact, company, opportunity or case in the system.
+
+Another model is to allow private data. Private data is data that is available to a single users (and to administrators, as administrators can always see all the data in the system). For example, let's say you have two regular users Mike and John. In this model, Mike can only see his own contacts, while John can only see his own contacts. If you add an administrator, say Becky, then she will be able to see both Mike and John's contacts. Becky, as an administrator, will also be able to transfer contacts from Mike to John or vice versa.
+
+You could choose to combine these two models and have both data that is available to everyone and private data, that is available to a single individual user. The private data is usually indicated by a yellow lock icon, while data available to everyone is indicated by a greyed out lock icon. Administrators can change the visibility of items from visible to everyone to private or from private to visible to everyone. Individual users can only make their own private contacts visible to everyone; they cannot make private items that were previously visible to everyone.
+
+If you need to make data available to multiple sets of users, then you need to create groups of users. The way you create groups of users depend on how you want to make the data visible. For example, you might define a group of users called Marketing Users (or Marketing Department) and add your marketers in that group and another group called Sales Users (or Sales Department) and add your sales users in that group. You can then make early stage contacts only available to marketers, while more qualified contacts are only visible to Sales.
+
+In another model, you could choose to group your users based on whether they're internal or external to your organisation. For example, if you use an external company to generate leads, you might allow those users to see certain contacts but not see them anymore once the contacts are being triaged or qualified internally. In that case, you might want to create an Internal Users vs. External Users groups.
+
+
+Groups
+------
+
+A group is made up of a list of users that belong to that group. Groups allow you to control the visibility of contacts, companies, cases and opportunities at group level, rather than individual user level. You can then control the group membership (i.e. who's in what group) to give individual users access to the data.
+
+
+Adding a new group
+------------------
+
+In the `Settings/Users & Groups <https://www.clevertim.com/welcome/#users>`_ section, scroll down to the section titled Groups, type the name of the group you want to create and press the Add group button.
+
+.. image:: /_static/adding_new_group.png
+
+In this example, we're adding a new group called Marketing Users.
+
+Once added, the newly created group will appear in the Groups section, as shown in the screenshot below:
+
+.. image:: /_static/new_group_added.png
+
+
+Adding/Removing users to groups
+-------------------------------
+
+Adding new users to the group is just a matter of selecting the user into the group user list. In the illustration below, we're adding a user Jennifer Hammond to a group Marketing Users:
+
+.. image:: /_static/adding_user_to_group.png
+
+Removing a user from a group is done by clicking the X next to the user's name in the group user list. In the illustration below, we're removing a user Jennifer Hammond from a group Marketing Users:
+
+.. image:: /_static/removing_user_from_group.png
+
+Once clicked, the user will disappear from the group user list.
+
+Changes to the group user list will be made as soon as you made them in the list; there is no additional Save button to press to apply the changes.
+
+
+Deleting a group
+----------------
+
+Deleting a group is done by clicking the X symbol on the right.
+
+.. image:: /_static/deleting_a_group.png
+
+A confirmation dialog will be shown, to make sure you have not clicked the X button by accident.
+
+.. image:: /_static/deleting_a_group_confirmation.png
+
+Deleting a group does not delete the users in the group, it just deletes the grouping of those users under the given name. The name of the group will not be available as a selection in the visibility dialogs.
+
+Items that were visible to the given group will no longer be visible to the users of the deleted groups, unless those users are members of another group that gives them visibility to those items. Walking through an example might give you a better idea of how that works.
+
+Let's say we have two groups: Marketing and Sales, with a user Mike in Marketing and a user John who is both in Marketing and Sales. Let's also assume with have a contact Prospect1, which is marked as visible to both Marketing and Sales groups. If we delete the Marketing group, then Prospect1 will only be visible to the Sales group, since the Marketing group no longer exists. In that case, Mike will no longer see Prospect1, while John, being in Sales as well, will continue to see Prospect1.
+
+When a group is deleted, items visible to only that group will revert to be visible to everyone. For example, if Prospect1 is visible only to the Marketing group and the Marketing group is deleted, then Prospect1 will become visible to everyone, including Sales who couldn't see this contact before.
+
