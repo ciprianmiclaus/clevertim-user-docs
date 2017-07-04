@@ -110,6 +110,14 @@ Once added, the newly created group will appear in the Groups section, as shown 
 
 .. image:: /_static/new_group_added.png
 
+If you want to change the name of the group after you have added it, just click on the name of the group:
+
+.. image:: /_static/changing_name_of_group.png
+
+When you click the name of the group, the name becomes editable, you can make the changes and click the tick symbol button to apply the changes:
+
+.. image:: /_static/changing_name_of_group2.png
+
 
 Adding/Removing users to groups
 -------------------------------
