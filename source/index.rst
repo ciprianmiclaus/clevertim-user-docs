@@ -11,4 +11,5 @@ Contents:
    custom_fields/index
    users_groups/index
    import/index
+   email_dropbox/index
    faq/index
